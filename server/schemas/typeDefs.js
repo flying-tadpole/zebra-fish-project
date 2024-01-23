@@ -4,7 +4,7 @@ const typeDefs = `
     type Lab {
         _id: ID
         pi: String
-        protocols [String]
+        protocols: [String]
     }
 
     type Fish {
@@ -12,7 +12,7 @@ const typeDefs = `
         cageCard: String
         lab: ID
         strain: String
-        location: {String}
+        location: String
         dateOfHatch: Date
     }
 
@@ -23,7 +23,7 @@ const typeDefs = `
 
     type Mutation {
         addLab(pi: String, protocols: [String]): Lab
-        addFish(cageCard: String, lab: ID, strain: String, location: {String}, dateOfHatch: Date): Fish
+        addFish(cageCard: String, lab: ID, strain: String, location: String, dateOfHatch: Date): Fish
     }
 `;
 
