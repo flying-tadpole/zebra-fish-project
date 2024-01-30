@@ -1,11 +1,11 @@
-const Home = () => {
+const Lab = () => {
     return (
         <main>
             <div>
-                <h2>ZebraFish??</h2>
+                <h2>Lab List Page</h2>
             </div>
         </main>
     )
 }
 
-export default Home
+export default Lab
