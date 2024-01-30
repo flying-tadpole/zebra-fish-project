@@ -6,3 +6,13 @@ export const ADD_LAB = gql`
         $protocols: [String]
     )
 `
+
+export const ADD_FISH = gql`
+    mutation addFish(
+        $cageCard: String
+        $lab: ID
+        $strain: String
+        $location: String
+        $dateOfHatch: Date
+    )
+`
